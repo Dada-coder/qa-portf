@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "bb23892f-8b25-4500-b650-a4db2910a030",
+		"name": "Moya",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48604091",
+		"_collection_link": "https://xxxdaadaxxx-3084860.postman.co/workspace/a4e84924-b6ba-4663-8fcf-e47afbf7d4d4/collection/48604091-bb23892f-8b25-4500-b650-a4db2910a030?action=share&source=collection_link&creator=48604091"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\r\n\"location\": { \r\n\r\n\"lat\": -38.383494, \r\n\r\n\"lng\": 33.427362 \r\n\r\n}, \"accuracy\": 50, \r\n\r\n\"name\": \"Frontline house\", \r\n\r\n\"phone_number\": \"(+91) 983 893 3937\", \r\n\r\n\"address\": \"29, side layout, cohen 09\", \r\n\r\n\"types\": [\r\n\r\n \"shoe park\", \r\n\r\n\"shop\"\r\n\r\n ],\r\n\r\n \"website\": \"http://google.com\", \r\n\r\n\"language\": \"French-IN\"\r\n\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123",
+					"protocol": "https",
+					"host": [
+						"rahulshettyacademy",
+						"com"
+					],
+					"path": [
+						"maps",
+						"api",
+						"place",
+						"add",
+						"json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "qaclick123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=625f85da3386bd30d4613924ba219076",
+					"protocol": "https",
+					"host": [
+						"rahulshettyacademy",
+						"com"
+					],
+					"path": [
+						"maps",
+						"api",
+						"place",
+						"get",
+						"json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "qaclick123"
+						},
+						{
+							"key": "place_id",
+							"value": "625f85da3386bd30d4613924ba219076"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\r\n\"place_id\":\"c104d917f4b60e2c9a5feda6c9cbf279\",\r\n\r\n \"address\":\"100 Lenina street, RU\", \r\n\r\n\"key\":\"qaclick123\" \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123",
+					"protocol": "https",
+					"host": [
+						"rahulshettyacademy",
+						"com"
+					],
+					"path": [
+						"maps",
+						"api",
+						"place",
+						"update",
+						"json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "qaclick123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Body:\r\n\r\n{\r\n\r\n\"place_id\":\"625f85da3386bd30d4613924ba219076\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123",
+					"protocol": "https",
+					"host": [
+						"rahulshettyacademy",
+						"com"
+					],
+					"path": [
+						"maps",
+						"api",
+						"place",
+						"delete",
+						"json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "qaclick123"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
